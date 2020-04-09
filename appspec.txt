@@ -1,0 +1,17 @@
+procedimento para instalar agente no linux
+
+#!/bin/bash-x
+REGION=$(curl 169.254.169.244/latast/meta-data/placement/avaibility-zone/
+sudo yum update
+sudo yum install ruby
+sudo yum install wget
+cd /homne/ec2-user
+// com variavel
+wget https://aws-codedeploy-$REGION.s3.amazonaws.com/latest/install
+
+wget https://aws-codedeploy-us-east-1.s3.amazonaws.com/latest/install
+chmod +x ./install
+sudo ./install auto
+
+
+
